@@ -9,7 +9,7 @@ h2, h3 {
 }
 
 h1 {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Inconsolata';
   font-weight: 700;
   padding: 0px 0 5px 15px;
 }
@@ -94,8 +94,21 @@ p {
   background-color: #4C34AD;
   color: #ffffff;
 }
+
+.count {
+  max-width: 100%;
+  background-color: #ECEEF0;
+  padding:15px;
+}
+
+.antal-artiklar {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
 content {
-  font-family: "Gotham SSm A","Gotham SSm B",Arial,sans-serif;
+  font-family: 'Roboto', sans-serif;
   padding: 100px;
   background-color: #ECEEF0;
 }

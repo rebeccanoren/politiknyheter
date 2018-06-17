@@ -19,14 +19,23 @@ const centerpartietLinkDiv = document.querySelector(".centerpartiet");
 const sverigedemokraternaLinkDiv = document.querySelector(".sverigedemokraterna");
 
 const articlesDiv = document.querySelector(".articles")
-const largeArticlesDiv = document.querySelector(".large-article")
+const countDiv = document.querySelector(".count")
 
+const largeArticlesDiv = document.querySelector(".large-article")
 const recievedNews = (newsdata) => {
-    articlesDiv.innerHTML = null;
+	articlesDiv.innerHTML = null;
+	countDiv.innerHTML = null;
+	const antalArtiklar = (newsdata.totalResults);
+	const div3 = document.createElement("div")
+	div3.className = "antal-artiklar"
+	div3.innerHTML = `
+	<p> ${newsdata.totalResults} artiklar</p>
+	` 
+	countDiv.appendChild(div3)	
+
     newsdata.articles.forEach((article, index) => {
-			
+		
         const res = article.publishedAt.split("T");
-        
         //Here we create and add html elements to our html file
       const div = document.createElement("div")
       div.className = "news"
@@ -42,6 +51,8 @@ const recievedNews = (newsdata) => {
       articlesDiv.appendChild(div)	
     })
 }
+
+
 
 const fetchAllaNews = () => {
 	fetch(allaUrl)
