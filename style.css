@@ -1,0 +1,176 @@
+body {
+margin:0;
+}
+
+h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  margin: 0px 0px 5px 0px;
+}
+
+h1 {
+  font-family: 'Inconsolata', monospace;
+  font-weight: 700;
+  padding: 0px 0 5px 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p {
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  max-width: 100%;
+  height: 100%;
+  padding: 0px;
+  background: #4C34AD;
+  color: #f1f1f1;
+  padding-top:5px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky {
+  padding-top: 0px;
+}
+
+
+.filter {
+  max-width: 100%;
+  background-color: #FFFFFF;
+  padding:15px 15px 15px 15px;
+}
+
+.filter-button {
+  background-color: #ECEEF0;
+  border: none;
+  color: #000000;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  border-radius: 3px;
+}
+
+.read-article-button {
+  background-color: #4C34AD;
+  border: none;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.read-article-button a{
+  color: white;
+}
+
+.filter-button:hover {
+  background-color: #E2E1E9;
+}
+
+.filter-button:active {
+  background-color: #4C34AD;
+  color: #ffffff;
+}
+content {
+  font-family: "Gotham SSm A","Gotham SSm B",Arial,sans-serif;
+  padding: 100px;
+  background-color: #ECEEF0;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #ECEEF0;
+}
+
+.news {
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.news img {
+  width: 100%;
+}
+
+.news-content {
+  margin: 0px;
+}
+
+.news-article {
+  padding: 15px;
+}
+
+.published-date {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+.news:hover {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.06);
+}
+
+.demo {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.large-article {
+
+color: #4C34AD;
+}
+
+li {
+  list-style-type:none;
+}
+
+.show {
+  display: block;
+}
+
+/* For tablet */
+@media (min-width: 700px) and (max-width: 1140px) {
+  .news {
+    width: 100%;
+  }
+}
+
+/* For mobile */
+@media (max-width: 700px) {
+  body {
+    padding: 0px;
+  }
+  .articles {
+    display: block;
+  }
+
+  .news {
+    width: 100%;
+  }
+}
