@@ -114,18 +114,3 @@ allaLinkDiv.onclick = fetchAllaNews;
 //Fetch sends a request to the API.
 //Promise makes it possible to run this in the background. När vi får APIet då går den vidare och skickar tillbaka JSON.
 fetchAllaNews()
-/*
-  //  const filterFunction =() => {}
-
-  const buttonSoc = document.getElementById("#soc")
-  buttonSoc.addEventListener("click", () => {
-	var socialdemokraterna = buttonSoc.textContent
-	
-	articles.filter(article => {
-		return article.description.includes(socialdemokraterna) || article.titel.includes(socialdemokraterna)
-	}).forEach(articel => {
-		document.querySelector("place").append(article)
-	})
-})
-
-*/
